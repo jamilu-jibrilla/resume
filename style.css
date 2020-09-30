@@ -17,25 +17,50 @@ h1 {
 }
 .h1 {
     font-size: 7.5rem;
+    font-weight: 600;
 
 }
-.social-icon {
-    font-size: 25px;
+.social-icon {    
+    font-size: 30px;
     border-radius:50% ;
     padding-right:8px ;
+    margin-bottom: 3330px;
 }
 .wrapper {
     display: flex;
 }
 @media screen and (max-width: 750px) {
+    body {
+        font-size: 1.9rem;
+    }
+    h1 {
+
+        font-size: 5rem;
+    }
+    .social-icon {
+        font-size: 45px;
+        padding-right: 15px;
+    }
+    
+    h2,h3,h4,h5,h6 {
+        font-size:3rem;
+    }
     aside{
         display: none;
     }    
     .resume-content, .resume-content-one, .resume-section .d-flex {
         display: flex;
         flex-direction: column;
+        
+       }
+    .lead {
+        font-size: 2rem;
+    }
+    .resume-content-one {
+        padding: 5rem 5rem 5rem 2rem;
     }
 }    
+
 .side-nav {
     background-color: #bd5d38;
     height: 100%;
@@ -70,22 +95,27 @@ h1 {
     color: inherit;
     text-decoration: none;
 }
+
+@media screen and (min-width: 1024px){
+    .resume-section{
+        height: 100vh;   
+    }
+}
+
 @media screen and (min-width: 750px){
     
     .main {
         position: absolute;
         left: 17rem;
     }
-}
-.resume-content-one {
-    padding:10rem 3rem 3rem 3rem;
-}
-.resume-section {
-    height: 100vh;
-}
-.resume-section p{
-    color: #6c757d;
-}
+
+    .resume-content-one {
+        padding:10rem 3rem 3rem 3rem;       
+    }
+    .resume-section p{
+        color: #6c757d;
+    }
+} 
  a {
     color:  #cf7754;
     text-decoration: none;
